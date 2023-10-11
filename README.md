@@ -1,5 +1,5 @@
 <h1 align="center">
-# TidyTuesday
+TidyTuesday
 </h1>
 
 ---
