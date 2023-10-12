@@ -22,6 +22,12 @@ head(haunted_places)
 state_value <- as.data.frame(table(haunted_places$state_abbrev))
 colnames(state_value) <- c("state", "Freq")
 
+# Labeling state abbr
+centroid_labels <- usmapdata::centroid_labels("states")
+colnames(centroid_labels)[4] <- "state"
+state_labels <- merge(state_value, centroid_labels, by = "state")
+state_labels_low <- state_labels |> filter(Freq < 500) # Black color
+state_labels_high <- state_labels |> filter(Freq >= 500) # White color
 
 ## Colors
 bg_col <- "#eeeeee" # fafafa
@@ -52,6 +58,10 @@ plot_haunted <- plot_usmap(data = state_value, values = "Freq", color = map_col)
   scale_fill_continuous(
     low = "white", high = map_col, name = "# of Haunted Place",
     label = scales::comma  ) +
+  geom_text(data = state_labels_low, aes(x=x, y=y, label= state),
+            color= "black", size= 5)+
+  geom_text(data = state_labels_high, aes(x=x, y=y, label= state),
+            color= "white", size= 5)+
   labs(title = title1,
          caption = caption1)+
   theme_void(base_size = 30, base_family = "oswald")+ # for png, base: 30. svg: 20
