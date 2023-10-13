@@ -37,6 +37,7 @@ map_col <- "#bf0000" # "#0576b6" blue
 ## Texts
 # Plot1 - Texts
 title1 = "Ghostly Geographies: Haunted Places Across the U.S."
+subtitle1 = "Number of Haunted Places per State"
 caption1 = paste0(
   "**Data**: Haunted Places Dataset (Timothy Renner)<br>**Graphic**: Tope ", social_caption
 )
@@ -53,7 +54,7 @@ social_caption <- glue::glue(
 )
 
 
-## Plot: # of Haunted Place per state
+## Plot1: # of Haunted Place per state
 plot_haunted <- plot_usmap(data = state_value, values = "Freq", color = map_col)+
   scale_fill_continuous(
     low = "white", high = map_col, name = "# of Haunted Place",
@@ -63,7 +64,8 @@ plot_haunted <- plot_usmap(data = state_value, values = "Freq", color = map_col)
   geom_text(data = state_labels_high, aes(x=x, y=y, label= state),
             color= "white", size= 5)+
   labs(title = title1,
-         caption = caption1)+
+       subtitle = subtitle1,
+       caption = caption1)+
   theme_void(base_size = 30, base_family = "oswald")+ # for png, base: 30. svg: 20
   theme(legend.position = "right",
         plot.title.position = "plot", # plot title 기본 위치가 plot 바로 위.
@@ -74,8 +76,13 @@ plot_haunted <- plot_usmap(data = state_value, values = "Freq", color = map_col)
           family = "oswald",
           lineheight = 0.5,
           size = 40, # for png, size = 35. svg: 25
-          margin = margin(b = 5, t = 5, r = 5) # plot title 기본 위치를 기준으로 변경.
+          margin = margin(b = 2, t = 5, r = 5, l = 5) # plot title 기본 위치를 기준으로 변경.
         ),
+        plot.subtitle = element_textbox_simple(
+          colour = text_col,
+          family = "oswald",
+          margin = margin(b = 5, t = 1, l = 5),
+          size = 30),
         plot.caption = element_textbox_simple(
           colour= text_col,
           lineheight = 0.5,
