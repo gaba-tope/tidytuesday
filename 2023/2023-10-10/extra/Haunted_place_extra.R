@@ -101,7 +101,7 @@ to assess the relative haunted house density of each U.S. state in relation to
 the smallest state. It is calculated by dividing the 'haunted place ratio' by the
 'area ratio' which is then multiplied by 100. 'Haunted place ratio' is calculated by 
 dividing the number of haunted place of a given state by the number of the haunted place 
-of the smallest state.  'Area ratio' is a metric used to represent land area of
+of the smallest state.  'Area ratio' is calculated by the land area of
 each U.S. state divided by the smallest state area. This index provides a dimensionless measure indicating 
 the number of haunted house per state land area, accounting for the relative land size of each state.
 <br>**Data**: Haunted Places Dataset (Timothy Renner)<br>**Graphic**: Tope ", social_caption
@@ -115,7 +115,7 @@ to assess relative number of haunted house per person in each U.S. state,
 normalized to the state with the smallest number of haunted house. 
 It is calculated by dividing the \'haunted place ratio\' by the \'population ratio\' which is then multiplied by 100. ",
   "\'Haunted place ratio\' is calculated by dividing the number of haunted place of a given state by the number of the haunted place of the smallest state. 
-                  \'Population ratio\' is a metric used to represent population of each U.S state divided by the population of the smallest state. 
+                  \'Population ratio\' is calculated by population of each U.S state divided by the population of the smallest state. 
 This index provides a dimensionless measure indicating the number of haunted house per capita, accounting for the relative population size of each state. <br>",
   "**Data**: Haunted Places Dataset (Timothy Renner)<br>**Graphic**: Tope ", social_caption
 )
