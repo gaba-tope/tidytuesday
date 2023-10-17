@@ -77,7 +77,7 @@ taylor_dance_dist <- ggplot(data = danceability_noNA) +
       face = "bold",
       family = "oswald",
       lineheight = 0.5,
-      size = 40,
+      size = 50,
       margin = margin(b = 10, t = 2) # plot title 기본 위치를 기준으로 변경.
     ),
     plot.caption = element_textbox_simple(
@@ -85,7 +85,7 @@ taylor_dance_dist <- ggplot(data = danceability_noNA) +
       lineheight = 0.5,
       family = "oswald",
       margin = margin(t = 13, b = 5, l = 5), # plot caption 기본 위치를 기준으로 변경.
-      size = base_size + 10
+      size = 30
     ),
     axis.text.x = element_text(face="bold", size = 20),
     axis.text.y = element_text(face="bold",size = 20),
@@ -126,15 +126,15 @@ theme(
                 size = 30,
                 margin = margin(b = 2, t = 5, r = 5, l = 5)
               ),
-  panel.grid.major = element_line(color = 'white'),
-  plot.background = element_rect(fill = bg_col, colour = bg_col),
-  panel.background = element_rect(fill = bg_col, colour = bg_col),
   plot.caption = element_textbox_simple(
                 colour= text_col,
                 lineheight = 0.5,
                 family = "oswald",
                 margin = margin(t = 13, b = 5, l = 5), # plot caption 기본 위치를 기준으로 변경.
                 size = 25),
+  panel.grid.major = element_line(color = 'white'),
+  plot.background = element_rect(fill = bg_col, colour = bg_col),
+  panel.background = element_rect(fill = bg_col, colour = bg_col),
   legend.margin = margin(r = 5)
               )
 
