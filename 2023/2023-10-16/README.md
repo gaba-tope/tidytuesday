@@ -3,6 +3,6 @@
 ---
 
 <p align="center">
-  <img src="/2023/2023-10-16/Taylor_dance_dist(2023-10-16).png" width="80%">
-  <img src="/2023/2023-10-16/Taylor_corr(2023-10-16).png" width="80%">
+  <img src="/2023/2023-10-16/Taylor_dance_dist(2023-10-16).png" width="70%">
+  <img src="/2023/2023-10-16/Taylor_corr(2023-10-16).png" width="70%">
 </p>
