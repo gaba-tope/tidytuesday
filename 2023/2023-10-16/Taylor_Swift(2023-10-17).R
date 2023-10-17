@@ -78,13 +78,13 @@ taylor_dance_dist <- ggplot(data = danceability_noNA) +
       family = "oswald",
       lineheight = 0.5,
       size = 50,
-      margin = margin(b = 10, t = 2) # plot title 기본 위치를 기준으로 변경.
+      margin = margin(b = 10, t = 2, l = 20) # plot title 기본 위치를 기준으로 변경.
     ),
     plot.caption = element_textbox_simple(
       colour= text_col,
       lineheight = 0.5,
       family = "oswald",
-      margin = margin(t = 13, b = 5, l = 5), # plot caption 기본 위치를 기준으로 변경.
+      margin = margin(t = 13, b = 5, l = 20), # plot caption 기본 위치를 기준으로 변경.
       size = 30
     ),
     axis.text.x = element_text(face="bold", size = 20),
