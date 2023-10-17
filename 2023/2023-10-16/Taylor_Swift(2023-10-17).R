@@ -39,7 +39,7 @@ caption1 = paste0("The Spotify Danceability Score is an index that measures how 
                   social_caption)
 
 title2 = "Exploring Attribute Links in Taylor's Melodies"
-subtitle2 = "Correlation Matrix between Attributes in Talor Swift's Songs"
+subtitle2 = "Correlation Matrix between Attributes in Taylor Swift's Songs"
 caption2 = paste0("Spearman's rank correlation coefficient is used above.<br>",
   "**Data**: Taylor Swift Song Dataset (Curated by W. Jake Thompson)<br>**Graphic**: Tope ", social_caption
 )
