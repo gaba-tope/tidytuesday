@@ -32,7 +32,7 @@ danceability_noNA <- attributes$danceability |>as_tibble()
 danceability_noNA <- danceability_noNA[complete.cases(danceability_noNA),]
 colnames(danceability_noNA) <- "danceability"
 ## Texts-----------------------------------------------------
-title1 = "Danceability Distribution in Talor Swift's Songs"
+title1 = "Danceability Distribution in Taylor Swift's Songs"
 caption1 = paste0("The Spotify Danceability Score is an index that measures how suitable a track is for dancing. 
                   The scores are provided by Spotify.<br>",
                   "**Data**: Taylor Swift Song Dataset (Curated by W. Jake Thompson)<br>**Graphic**: Tope ",
