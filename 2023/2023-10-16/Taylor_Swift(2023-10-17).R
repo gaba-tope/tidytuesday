@@ -92,7 +92,7 @@ taylor_dance_dist <- ggplot(data = danceability_noNA) +
     axis.title.x = element_text(size = base_size + 15 ,margin= margin(t=6)),
     axis.title.y = element_text(size = base_size + 15, angle = 90, margin = margin(r = 10))
   )
-ggsave(file="Taylor_dance_dist.png", plot = taylor_dance_dist, width = 2400 ,height= 1600, 
+ggsave(file="Taylor_dance_dist(2023-10-16).png", plot = taylor_dance_dist, width = 2400 ,height= 1600, 
        units = 'px')
 
 
@@ -138,5 +138,5 @@ theme(
   legend.margin = margin(r = 5)
               )
 
-ggsave(file="Taylor_corr.png", plot = taylor_corr_full, width = 1800, height= 1800, 
+ggsave(file="Taylor_corr(2023-10-16).png", plot = taylor_corr_full, width = 1800, height= 1800, 
        units = 'px')
