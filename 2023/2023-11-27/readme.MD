@@ -3,8 +3,9 @@
 ---
 
 <p align="center">
+  <img src="/2023/2023-11-27/Episode_viewer.png" width="80%">
   <img src="/2023/2023-11-27/Episode_cloud_modified.png" width="60%">
-  <img src="/2023/2023-11-27/Episode_viewer.png" width="70%">
+  
 </p>
 ---
 Note that "Episode_cloud_modified.svg" and "Episode_cloud_modified.png" was produced from the following steps: <br>
