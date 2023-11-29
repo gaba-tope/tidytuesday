@@ -7,7 +7,9 @@
   <img src="/2023/2023-11-27/Episode_cloud_modified.png" width="60%">
   
 </p>
+
 ---
+
 Note that "Episode_cloud_modified.svg" and "Episode_cloud_modified.png" was produced from the following steps: <br>
 The original image was modified using Adobe Illustrator (Tryout, ver 28.0) (64-bit) <br>
 1. Using (Window > Image Trace > Preset = High Fidelity Photo), the cloud image was visually refined. <br>
