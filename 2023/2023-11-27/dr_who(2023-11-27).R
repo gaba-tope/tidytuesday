@@ -149,7 +149,7 @@ drwho_view_plot <- ggplot(data = drwho_viewer_90th_sorted_factored)+
     axis.title.x = element_text(size = base_size, margin = margin(t=6)),
     axis.title.y = element_text(size = base_size, angle = 90, margin = margin(r = 10))
   )
-ggsave(file="Episode_viewer.png", plot = drwho_view_plot, width = 2400, height= 1600, 
+ggsave(file="Episode_viewer.png", plot = drwho_view_plot, width = 1600, height= 1300, # Originally (2400*1600)
        units = 'px')
 
 # Word Cloud
