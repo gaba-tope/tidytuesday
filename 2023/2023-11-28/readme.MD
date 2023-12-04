@@ -3,8 +3,8 @@
 ---
 
 <p align="center">
-  <img src="/2023/2023-11-27/Episode_viewer.png" width="80%">
-  <img src="/2023/2023-11-27/Episode_cloud_modified.png" width="55%">
+  <img src="/2023/2023-11-28/Episode_viewer.png" width="80%">
+  <img src="/2023/2023-11-28/Episode_cloud_modified.png" width="55%">
   
 </p>
 
