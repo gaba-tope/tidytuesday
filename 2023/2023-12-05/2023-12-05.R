@@ -130,8 +130,7 @@ map_theme <- theme(
   legend.title = element_text(colour = text_col,
                               family = main_font,
                               size = 30,
-                              lineheight = 0.3,
-                              face = "bold"
+                              lineheight = 0.3
                               ), #face = "bold"
   legend.background = element_rect(fill = bg_col)
 )
