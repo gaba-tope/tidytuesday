@@ -215,7 +215,7 @@ point_bar_m <- ggplot() +
            stat = "identity") + 
   scale_y_continuous(limits = c(0, 55),
                      breaks = seq(0, 50, by = 10)) +
-  scale_fill_manual(values = c("#d96e87", "#990000", "#50586D", "#ff9933", "#346c4e", "#694732", "#401641" )
+  scale_fill_manual(values = c("#d96e87", "#990000", "#56B4E9", "#ff9933", "#009E73", "#694732", "#D55E00")
                     ) +
   geom_label(data = point_m[1:3, ],
              aes(x = Gender, y = Pct_100, label = paste0(Pct_100, "%")),
@@ -233,7 +233,7 @@ point_bar_w <- ggplot() +
            stat = "identity") +
   scale_y_continuous(limits = c(0, 55),
                      breaks = seq(0, 50, by = 10)) +
-  scale_fill_manual(values = c("#d96e87", "#694732", "#401641", "#990000","#50586D","#346c4e", "#ff9933" )) +
+  scale_fill_manual(values = c("#d96e87", "#694732", "#D55E00", "#990000","#56B4E9","#009E73", "#ff9933" )) +
   geom_label(data = point_w[1:3, ],
              aes(x = Gender, y = Pct_100, label = paste0(Pct_100, "%")),
              nudge_x = c(-0.385, -0.255, -0.125),
