@@ -12,6 +12,8 @@ Valentine's Day consumer data
 
 <img src="/2024/2024-02-13/historical_propor_line.png" width="80%"/>
 <img src="/2024/2024-02-13/historical_spend_line.png" width="80%"/>
+
 Below is not part of tidytuesday challange, but plotted based on dataset organized by [Suraj Das](https://www.kaggle.com/datasets/infinator/happy-valentines-day-2022?resource=download).
+
 <img src="/2024/2024-02-13/Point_bar.png" width="80%"/>
 </p>
