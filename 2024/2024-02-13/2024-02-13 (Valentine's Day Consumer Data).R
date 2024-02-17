@@ -105,11 +105,11 @@ main_theme <- theme(
                              colour = text_col),
   legend.background = element_rect(fill = bg_col),
   legend.key = element_rect(fill = bg_col,
-                            size = 15),
+                            size = 20),
   legend.text = element_text(family = main_font,
-                             size = 15),
+                             size = 20),
   legend.title = element_text(family = main_font, 
-                              size = 15)
+                              size = 20)
 )
 
 patch_theme <- theme( 
@@ -130,7 +130,7 @@ patch_theme <- theme(
     lineheight = 0.5,
     family = main_font,
     margin = margin(t = 13, b = 5, l = 5),
-    size = 15
+    size = 20
   )
 )
 
