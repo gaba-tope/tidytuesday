@@ -53,7 +53,7 @@ title_spend_line <- "Average Spending on Valentine's Day Gift"
 
 title_propor_line <- "The Percentage of People Celebrating Valentine's Day (2010-2022)"
 
-title_point_bar <- "What is the point of valentine's day?"
+title_point_bar <- "What is the Point of Valentine's Day?"
 caption <- paste0("Data : Valentine's Day Consumer Data (U.S. National Retail Federation, organiazed by Suraj Das for a Kaggle dataset)<br>Graphic : ", social_caption)
 
 ## Themes -------------------------------------------------
@@ -109,7 +109,8 @@ main_theme <- theme(
   legend.text = element_text(family = main_font,
                              size = 20),
   legend.title = element_text(family = main_font, 
-                              size = 20)
+                              size = 20),
+  legend.spacing.y = unit(5, "mm")
 )
 
 patch_theme <- theme( 
@@ -239,6 +240,7 @@ point_bar_w <- ggplot() +
              nudge_x = c(-0.385, -0.255, -0.125),
              nudge_y = 2
   ) +
+  guides(fill = guide_legend(byrow = TRUE)) +
   labs(x = "", y = "") +
   main_theme
 
