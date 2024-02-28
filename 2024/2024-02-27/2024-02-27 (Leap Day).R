@@ -257,5 +257,3 @@ event_plotly <- plot_ly() |>
 event_plotly
 
 htmlwidgets::saveWidget(event_plotly, file = "event_plotly.html") 
-
-event_plotly |> class()
