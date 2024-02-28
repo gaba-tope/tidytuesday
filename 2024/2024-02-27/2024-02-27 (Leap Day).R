@@ -17,8 +17,17 @@ tuesdata <- tidytuesdayR::tt_load('2024-02-27')
 ## Fonts & Colors ---------------------------------------------------
 font_add_google(name = "Oswald", family = "oswald")
 showtext_auto()
-
 main_font <- "oswald"
+# Font dependency for plotly
+oswald_file <- showtextdb::google_fonts("Oswald")$regular_url 
+font_css <- paste0(
+  "<style type = 'text/css'>",
+  "@font-face { ",
+  "font-family: 'oswald'; ", 
+  "src: url('", oswald_file, "'); ", 
+  "}",
+  "</style>")
+
 bg_col <- "#eeeeee"
 text_col <- "grey10"
 major_grid_col <- "#bebebe"
@@ -254,6 +263,18 @@ event_plotly <- plot_ly() |>
          autosize = TRUE,
          margin = list(b = 80, t = 70, r = 10)
          )
+
+event_plotly$dependencies <- c(
+  event_plotly$dependencies,
+  list(
+    htmltools::htmlDependency(
+      name = "oswald",
+      version = "0",  
+      src = "",
+      head = font_css 
+    )
+  )
+)
 event_plotly
 
-htmlwidgets::saveWidget(event_plotly, file = "event_plotly.html") 
+htmlwidgets::saveWidget(event_plotly, file = "event_plotly_post.html") 
